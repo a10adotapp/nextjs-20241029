@@ -1,0 +1,12 @@
+services:
+  app:
+    image: github.com/a10adotapp/nextjs-20241029:dev
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/Dockerfile
+    container_name: nextjs-20241029-app
+    command: sleep infinity
+    volumes:
+      - ..:/workspace
+    ports:
+      - 3000:3000

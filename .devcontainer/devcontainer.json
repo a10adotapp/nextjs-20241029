@@ -1,0 +1,14 @@
+{
+  "name": "nextjs-20241029",
+  "dockerComposeFile": "compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Prisma.prisma",
+        "biomejs.biome"
+      ]
+    }
+  }
+}
