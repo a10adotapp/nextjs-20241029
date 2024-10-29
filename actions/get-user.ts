@@ -18,3 +18,5 @@ export async function getUser(): Promise<User> {
     }, 2 * 1000);
   });
 }
+
+export const getUserCached = cache(getUser);

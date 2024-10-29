@@ -1,11 +1,11 @@
 import { use } from "react";
-import { getUser } from "@/actions/get-user";
+import { getUserCached } from "@/actions/get-user";
 import { Container } from "@/components/container";
 
 export function ParentSection() {
   console.log("ParentSection");
 
-  const user = use(getUser());
+  const user = use(getUserCached());
 
   const title = `Parent Section (${user.id})`;
 

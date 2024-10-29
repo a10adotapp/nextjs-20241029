@@ -1,11 +1,11 @@
 import { use } from "react";
-import { getUser } from "@/actions/get-user";
+import { getUserCached } from "@/actions/get-user";
 import { Container } from "@/components/container";
 
 export function LayoutHeader() {
   console.log("LayoutHeader");
 
-  const user = use(getUser());
+  const user = use(getUserCached());
 
   const title = `Layout Header (${user.id})`;
 
